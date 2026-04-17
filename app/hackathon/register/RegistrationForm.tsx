@@ -244,7 +244,7 @@ export function RegistrationForm() {
                     {...register("teamSize", { required: true, min: 1, max: 5 })}
                     className="w-full rounded-2xl border border-white/10 bg-white/5 p-3 text-white outline-hidden focus:border-orange-500/50"
                   >
-                    {[1, 2, 3, 4, 5].map((s) => (
+                    {[5].map((s) => (
                       <option key={s} value={s} className="bg-[#121212]">
                         {s} members
                       </option>
