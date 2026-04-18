@@ -22,7 +22,6 @@ type FormData = {
   leaderName: string;
   leaderEmail: string;
   leaderPhone: string;
-  collegeName: string;
   department: string;
   semester: string;
   teamSize: number;
@@ -218,13 +217,6 @@ export function RegistrationForm() {
                   })}
                 />
                 <InputGroup
-                  label="College Name"
-                  id="collegeName"
-                  placeholder="College search"
-                  error={errors.collegeName?.message}
-                  {...register("collegeName", { required: "College is required" })}
-                />
-                <InputGroup
                   label="Department / Course"
                   id="department"
                   placeholder="e.g. Computer Science"
@@ -321,7 +313,7 @@ export function RegistrationForm() {
                         })}
                       />
                       <InputGroup
-                        label="Roll Number"
+                        label="Examination Roll Number"
                         id={`participants.${index}.rollNumber`}
                         placeholder="Roll No"
                         error={errors.participants?.[index]?.rollNumber?.message}
